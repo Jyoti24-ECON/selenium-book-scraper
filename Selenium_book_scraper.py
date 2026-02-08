@@ -71,7 +71,7 @@ while True:
         driver.execute_script("arguments[0].click();", next_button)
         time.sleep(1)  # allowing  next page to load
     except:
-        #  If no next page found → stop looping
+        #  If no next page found,  stop looping
         break
 
 
@@ -89,3 +89,4 @@ df.to_csv("books_dataset.csv", index=False)
 
 print("Scraping complete.")
 print("Total books scraped:", len(df))
+
